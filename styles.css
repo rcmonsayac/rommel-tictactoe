@@ -18,8 +18,8 @@ body {
     flex-direction: column;
     padding: 30px 5px;
     align-items: center;
-    width: 300px;
-    height: 80%;
+    width: 320px;
+    height: 500px;
     background-color: #0B0C10;
     border-radius: 10px;
 }
@@ -52,11 +52,33 @@ body {
     color: #66FCF1;
     font-size: 18px;
     text-align: center;
-    margin-bottom: 20px;;
+    margin-bottom: 20px;
 }
 
 .board {
+    /* border: 1px solid #66FCF1; */
+    width: 300px;
+    height: 300px;
+}
+
+.row {
+    width: 300px;
+    height: 100px;
+    display: flex;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
     border: 1px solid #66FCF1;
-    width: 280px;
-    height: 280px;
+    color: #66FCF1;
+    font-size: 70px;
+    background-color: #1F2833;
+    outline: none;
+}
+
+.btn-hover {
+    border: 1px solid #1F2833;;
+    color: #1F2833;
+    background-color: #66FCF1;
 }
