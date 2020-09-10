@@ -62,7 +62,6 @@ function checkWinner(boardData) {
     return [];
 }
 
-
 function highlightWin(winner, buttons) {
     let i = 0;
     for (let row = 0; row < 3; row++) {
@@ -126,8 +125,15 @@ buttons.forEach((button) => {
             }
 
             if (winner.length) {
+                displayMessage.innerHTML = `${getMarkElement(currentTurn)} is the winner!`
                 disableButtons(buttons);
                 highlightWin(winner, buttons);
+            }
+            else if (turnNumber === 9) {
+                displayMessage.innerHTML = `It's a tie!`
+            }
+            else {
+                displayMessage.innerHTML = `It's ${getMarkElement(nextTurn)} turn!`
             }
         }
     });
